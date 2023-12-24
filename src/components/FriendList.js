@@ -100,7 +100,7 @@ const FriendList = ({profile=false, userprofileId=""}) => {
                     </Col>
                 </Row>
                 {friends.map(({_id, firstname, lastname, occupation, userImage}) => (
-                    <Row className="mt-1" key={_id}>
+                    <Row className="mt-3" key={_id}>
                         <Col xs="3" className="d-flex align-items-center justify-content-center">
                             <UserImage imageUrl={userImage}/>
                         </Col>
