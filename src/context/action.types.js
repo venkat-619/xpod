@@ -1,0 +1,11 @@
+// SET_LOADING, SET_CONTACT
+
+export const SET_LOADING = "SET_LOADING";
+export const SET_POST = "SET_POST";
+export const SET_UPDATED_POST = "SET_UPDATED_POST";
+export const SET_USER_POST = "SET_USER_POST";
+export const SET_SINGLE_POST = "SET_SINGLE_POST";
+export const DELETE_POST = "DELETE_POST";
+export const SET_FRIENDS = "SET_FRIENDS";
+export const SET_PROFILE_FRIENDS = "SET_PROFILE_FRIENDS";
+export const SET_THEME_MODE = "SET_THEME_MODE";

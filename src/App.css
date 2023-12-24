@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital@1&family=Montserrat:wght@300&display=swap');
+
+
+html,
+body,
+#root,
+.app {
+  
+  height: 100%;
+  width: 100%;
+  font-family: 'Krub', sans-serif;
+  margin: 0;   /* Removes default margin and padding  */
+  padding: 0;
+  /* background-color: #000; */
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-header {
+  font-weight: bold;
+  font-size: clamp(1rem, 2rem, 2.25rem);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-style {
+  padding: 8px 12px; 
+  font-size: 14px;
+  border: 1px solid #ccc; 
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  width: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-style:focus {
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+}
+
+.input-form-style { 
+  width: 100%;
+}
+
+control:not(:placeholder-shown)~label:visited,
+.form-floating>.form-control:not(:placeholder-shown)~label::after {
+  background-color: transparent; /* Remove the background-color property */
+}
+
+.input-box-style {
+  height: 3rem;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 1rem 2rem,
+}
+
+.input-box-style::placeholder {
+  font-size: 14px;
+  color: #999999 ;
+}
+
+.input-box-style:focus {
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+}
+
+.dropdown-item-change:active {
+  background-color: light;
+}
+
+.card-container {
+  /* background-color: #E0E0E0; Set the form background color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card-body-text {
+  font-weight: bold;
+  font-size: clamp(1rem, 1rem, 1rem);
+  color: #000;
+}
+
+.profile {
+  border-radius: 50%;
+  /* border: 2px solid rgba(0, 0, 0, 0.2); */
+  width: 110px;
+  height: 110px;
+}
+
+.Center {
+  height: 75vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.hidden {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.dropdown-item:hover {
+  background-color: #999999;
+}
+
+.dropdown-custom .dropdown-custom-item:focus {
+  background-color: #000;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.four_zero_four_bg{
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+ 
+ 
+.four_zero_four_bg h1{
+  font-size:80px;
+}
+ 
+.four_zero_four_bg h3{
+  font-size:80px;
+}
+       
+.link_404{      
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.contant_box_404{ 
+  margin-top:-50px;
+}
+
+.mobile-app {
+  @media (max-width: 1000px) {
+    display: none;
   }
 }
